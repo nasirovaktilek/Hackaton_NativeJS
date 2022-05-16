@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Hackaton_NativeJS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <img class="image" src="./image/logo.svg" alt="" id="logo-image" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul> -->
+          <!-- Button Создать start -->
+          <button id="createBtn" type="button" class="btn btn-light m-3">
+            Создать
+          </button>
+          <!-- Button Создать end -->
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="поиск"
+              aria-label="Search"
+              id="inpSearch"
+            />
+            <button class="btn btn-outline-light" type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar finish -->
+
+    <div class="modal" id="modal-window" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Добавление нового студента</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="closeBtn"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Информация о студенте</p>
+            <input type="text" name="" id="inpPhoto" placeholder="URL" />
+            <br />
+            <br />
+            <input type="text" name="" id="inpName" placeholder="Введите имя" />
+            <br />
+            <br />
+            <input
+              type="text"
+              name=""
+              id="inpEmail"
+              placeholder="Введите e-mail"
+            />
+            <br /><br />
+            <input
+              type="number"
+              name=""
+              id="inpKPI"
+              placeholder="Введите KPI"
+            />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="addBtn">
+              Добавить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      class="container mt-5 d-flex flex-wrap justify-content-between"
+      id="sectionPerson"
+    ></section>
+
+    <!-- edit -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Информация о студенте
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input
+              class="form-control me-2"
+              id="editInpPhoto"
+              type="text"
+              placeholder="URL"
+              aria-label="Search"
+            />
+            <br />
+            <input
+              class="form-control me-2"
+              id="editInpName"
+              type="text"
+              placeholder="name"
+              aria-label="Search"
+            />
+            <br />
+            <input
+              class="form-control me-2"
+              id="editInpEmail"
+              type="text"
+              placeholder="e-mail"
+              aria-label="Search"
+            />
+            <br />
+            <input
+              class="form-control me-2"
+              id="editInpKpi"
+              type="text"
+              placeholder="KPI"
+              aria-label="Search"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btnSave"
+              id="editBtnSave"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Сохранить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- edit end -->
+
+    <!-- Pagination start -->
+    <br />
+    <br />
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" id="prevBtn">Предыдущая</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" id="btn1">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#" id="btn2">2</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="btn3">3</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="btn4">4</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="btn5">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" id="nextBtn">Следующая</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Pagination end -->
+
+    <h4 id="h4">Made with ❤️ by Ekaterina</h4>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

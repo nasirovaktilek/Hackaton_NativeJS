@@ -1,0 +1,74 @@
+{
+  "person": [
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+      "name": "Аманова Мээрим",
+      "email": "meribayy@gmail.com",
+      "kpi": "40",
+      "id": 1
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/12.jpeg",
+      "name": "Маматкулов Эмир",
+      "email": "m.emir1800@gmail.com",
+      "kpi": "45",
+      "id": 2
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/11.jpeg",
+      "name": "Замир уулу Улан",
+      "email": "ulanseoulpoly@gmail.com",
+      "kpi": "45",
+      "id": 3
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/9.jpeg",
+      "name": "Султаналиев Канат",
+      "email": "sultanaliev228@gmail.com",
+      "kpi": "20",
+      "id": 4
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
+      "name": "Ekaterina",
+      "email": "katya88.kim@gmail.com",
+      "kpi": "85",
+      "id": 5
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/8.jpeg",
+      "name": "Зобнин Борис",
+      "email": "singulthor@gmail.com",
+      "kpi": "50",
+      "id": 6
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+      "name": "Кадырбеков Айдар",
+      "email": "captainlulahi@gmail.com",
+      "kpi": "70",
+      "id": 7
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/17.jpeg",
+      "name": "Нургелди кызы Илимкан",
+      "email": "ilika9679@gmail.com",
+      "kpi": "88",
+      "id": 8
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+      "name": "Ивагов Айбат",
+      "email": "aibativagov@gmail.com",
+      "kpi": "35",
+      "id": 9
+    },
+    {
+      "photo": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+      "name": "Усенканова Биназир ",
+      "email": "binazir.usenkanova@gmail.com",
+      "kpi": "95",
+      "id": 10
+    }
+  ]
+}

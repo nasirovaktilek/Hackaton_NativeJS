@@ -1,0 +1,24 @@
+.image {
+  height: 40px;
+  width: 100px;
+}
+
+.image:hover {
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+body {
+  background-image: url(https://devonblog.com/wp-content/uploads/2017/09/codeblauw.jpg);
+}
+
+#createBtn:hover {
+  background-color: yellow;
+}
+
+#h4 {
+  color: red;
+  align-items: center;
+  text-align: center;
+}
